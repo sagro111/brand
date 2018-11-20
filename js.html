@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+</head>
+
+<body>
+	<script>
+		/*var quest = prompt('Зимой и летом одним цветом?');
+		var score = 0;
+		
+		if(quest == 'Ёлка' || quest == 'ёлка') {
+			score++;
+		}
+		
+		quest = prompt('Тысяча одёжек не одной застёжки');
+		
+		if(quest == 'Капуста' || quest == 'капуста') {
+			score++;
+		}
+		
+		quest = prompt('Не огонь, а жжется');
+		
+		if(quest == 'Крапива' || quest == 'крапива') {
+			score++;
+		}
+			
+		alert('Вы угадали ' + score + ' загадок')*/
+
+		var vklad = +prompt('Введите сумму вклада');
+		var rost = 1 + parseInt(prompt('Введите процент вклада')) / 100;
+
+		var years = ['первый', 'второй', 'третий', 'четвёртый', 'пятый'];
+
+		for (var i = 0; i < years.length; i++) {
+			vklad = vklad * rost;
+			alert('На ' + years[i] + ' год, вы получите ' + vklad);
+		}
+
+
+
+	</script>
+</body>
+
+</html>
