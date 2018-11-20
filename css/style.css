@@ -151,7 +151,7 @@ ul {
 
 
 .cart::after {
-	content: '0';
+	content: '3';
 	font-size: 12px;
 	position: absolute;
 	top: -12px;
