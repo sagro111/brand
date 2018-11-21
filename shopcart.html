@@ -46,19 +46,21 @@
 			<li class="menu-list"><a href="singleproduct.html" class="menu-link">Page</a></li>
 		</ul>
 	</nav>
-	<main>
-		<div class="head-content">
-			<div class="container flex-box">
-				<div class="name-page">
-					<h2 class="pink">Shop Cart</h2>
-				</div>
-				<div class="breadcrumbs">
-					<a href="index.html" class="breadcrumbs-link">home</a>
-					<span>/</span>
-					<a href="shopcart.html" class="breadcrumbs-link pink">Shop cart</a>
-				</div>
+	<div class="page-name">
+		<div class="container flex-box">
+			<div class="page-head">
+				<h2 class="pink">Shop Cart</h2>
 			</div>
+			<nav class="breadcrumbs">
+				<ul class="bredcrumbs-menu">
+					<li class="breadcrumbs-list"><a href="index.html" class="breadcrumbs-link">home </a></li>
+					<li><span>/</span></li>
+					<li class="breadcrumbs-list"><a href="#" class="breadcrumbs-link pink">Shop Cart</a></li>
+				</ul>
+			</nav>
 		</div>
+	</div>
+	<main>
 		<div class="container">
 			<div class="cart-table">
 				<div class="cart-row upper">
@@ -172,8 +174,8 @@
 				<div class="shipping">
 					<h2 class="purchase-head-text">shipping adress</h2>
 					<form class="shipping-form" action="#">
-						<select class="shipping-input" value="" class="shipping-country">
-							<option name="" id="">Bangladesh</option>
+						<select class="shipping-input">
+							<option>Bangladesh</option>
 						</select>
 						<input class="shipping-input" type="text" placeholder="State">
 						<input class="shipping-input" type="text" placeholder="Postcode / Zip">
@@ -181,17 +183,17 @@
 					</form>
 				</div>
 				<div class="discount">
-					<h2 class="purchase-head-text">coupon  discount</h2>
+					<h2 class="purchase-head-text">coupon discount</h2>
 					<p class="discount-info">Enter your coupon code if you have one</p>
 					<input class="shipping-input" type="text" placeholder="Discount code">
 					<button class="quntity purchase-button">Apply coupon</button>
 				</div>
 				<div class="checkout">
-						<div class="checkout-info">
-							<p></p>
-							<p></p>
-						</div>
-						<a href="#" class="proceed-checkout">proceed to checkout</a>
+					<div class="checkout-info">
+						<p></p>
+						<p></p>
+					</div>
+					<a href="#" class="proceed-checkout">proceed to checkout</a>
 				</div>
 			</div>
 		</div>
