@@ -54,6 +54,7 @@ ul {
 .container {
 	width: 1140px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .header {
@@ -1082,7 +1083,7 @@ ul {
 }
 
 .cart-product-info {
-	font-style: 13px;
+	
 	font-weight: 700;
 	padding-right: 10px;
 }
@@ -1214,4 +1215,126 @@ ul {
 
 .checkout-info {
 	border-bottom: 1px solid #e2e2e2;
+}
+
+.single-product {
+	padding: 11px 0 45px 0;
+	margin-top: -70px;
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+background-color: #f7f7f7;
+}
+
+.single-product-box {
+	padding: 73px 250px 122px 250px;
+	border: 1px solid #eaeaea;
+	margin-top: -85px;
+	background-color: white;
+}
+
+.single-product-info {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 1px solid #eaeaea;
+	padding-bottom: 43px;
+}
+
+.what-category {
+	    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+	position: relative;
+}
+
+.what-category::before {
+	position: absolute;
+	content: '';
+	width: 63px;
+	height: 3px;
+	background-color: #ef5b70;
+	    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.single-product-info-text {
+	margin-top: 50px;
+	color: #5e5e5e;
+font-size: 14px;
+font-weight: 300;
+	text-align: center;
+}
+
+.single-product-maker {
+	margin-top: 28px;
+	display: flex;
+	width: 334px;
+	justify-content: space-between;
+}
+
+.single-product-maker p,
+.single-product-maker span {
+	font-size: 14px;
+}
+
+.single-product-price {
+	margin-top: 37px;
+	color: #ef5b70;
+font-size: 24px;
+font-weight: 700;
+}
+
+.single-product-character {
+	margin-top: 49px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 52px;
+}
+
+.single-product-character-item {
+	width: 144px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.single-product-character-item h3 {
+	font-size: 14px;
+}
+
+.single-product-input {
+	padding: 10px 15px;
+}
+
+.red {
+	width: 10px;
+	height: 10px;
+	background-color: red;
+}
+
+
+.green {
+	font-size:20px;
+}
+
+.single-product-button {
+	flex:2;
+	text-align: center;
+	margin-top: 28px;
+	
+}
+
+.may-like-head {
+	text-align: center;
+font-size: 24px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+.may-like {
+	margin-top: 119px;
+	
 }
