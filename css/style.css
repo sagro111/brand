@@ -1309,22 +1309,11 @@ font-weight: 700;
 	padding: 10px 15px;
 }
 
-.red {
-	width: 10px;
-	height: 10px;
-	background-color: red;
-}
-
-
-.green {
-	font-size:20px;
-}
 
 .single-product-button {
 	flex:2;
 	text-align: center;
 	margin-top: 28px;
-	
 }
 
 .may-like-head {
