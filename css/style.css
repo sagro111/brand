@@ -22,9 +22,8 @@ input[type="checkbox"] {
 	display: none;
 }
 
-input:focus,
-button:focus {
-	outline: none;
+:focus {
+  outline: 0;
 }
 
 input:focus::-webkit-input-placeholder {
@@ -310,7 +309,7 @@ ul {
 
 .features-content {
 	margin-top: 60px;
-	
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -813,6 +812,8 @@ ul {
 	margin-bottom: 20px;
 }
 
+
+
 .fa-caret-down,
 .fa-caret-up {
 	position: absolute;
@@ -874,8 +875,7 @@ ul {
 	transition: 250ms;
 }
 
-.trending-link:hover,
-.size-label:hover {
+.trending-link:hover {
 	color: #f16d7f;
 }
 
@@ -897,14 +897,54 @@ ul {
 
 
 .size-checkbox {
-	margin-top: -1px;
+	margin-top: -2px;
 	display: block;
-	width: 13px;
-	height: 13px;
+	width: 15px;
+	height: 15px;
 	border: 1px solid #ebebeb;
 	background-color: #ffffff;
 	float: left;
 	margin-right: 9px;
+	transition: 250ms;
+	position: relative;
+}
+
+.size-label:hover {
+	color: #f16d7f;
+}
+
+.size-label:hover .size-checkbox {
+	border: 1px solid #f16d7f;
+}
+
+
+input[type="checkbox"] ~ .size-checkbox::before{
+  content: '';
+  width: 7px;
+  height: 7px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  background-color: #f16d7f;	
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  transition: all 0.4s cubic-bezier(1, 0, 0.4, 0.5);
+  -webkit-transition: all 0.4s cubic-bezier(1, 0, 0.4, 0.5);
+}
+
+input[type="checkbox"]:checked ~ .size-checkbox {
+	border: 1px solid #f16d7f;
+}
+
+input[type="checkbox"]:checked ~ .size-checkbox::before {
+	border: 1px solid #f16d7f;
+  transition: all 0.4s cubic-bezier(1, 0, 0.4, 1);
+  -webkit-transition: all 0.4s cubic-bezier(1, 0, 0.4, 1);
+  transform: scale(1);
+  -webkit-transform: scale(1);
 }
 
 .size-label {
@@ -913,8 +953,9 @@ ul {
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
-
+	transition: 250ms;
 }
+
 
 
 .range-box {
@@ -1095,7 +1136,7 @@ ul {
 }
 
 .cart-product-info {
-	
+
 	font-weight: 700;
 	padding-right: 10px;
 }
@@ -1162,9 +1203,16 @@ ul {
 	margin-top: 22px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	height: 233px;
 
+}
+
+.discount-form {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .shipping-input {
@@ -1187,6 +1235,8 @@ ul {
 }
 
 .checkout {
+	max-height: 214px;
+	height: 154px;
 	padding: 41px 44px;
 	background-color: #f5f3f3;
 	display: flex;
@@ -1229,6 +1279,8 @@ ul {
 
 .checkout-info {
 	border-bottom: 1px solid #e2e2e2;
+	padding-bottom: 22px;
+	margin-bottom: 25px;
 }
 
 
@@ -1239,7 +1291,7 @@ ul {
 	justify-content: center;
 	border-top: 1px solid #eaeaea;
 	border-bottom: 1px solid #eaeaea;
-background-color: #f7f7f7;
+	background-color: #f7f7f7;
 }
 
 .single-product-box {
@@ -1258,8 +1310,8 @@ background-color: #f7f7f7;
 }
 
 .what-category {
-	    padding-bottom: 20px;
-    border-bottom: 1px solid #eaeaea;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eaeaea;
 	position: relative;
 }
 
@@ -1269,16 +1321,16 @@ background-color: #f7f7f7;
 	width: 63px;
 	height: 3px;
 	background-color: #ef5b70;
-	    bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
+	bottom: -2px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .single-product-info-text {
 	margin-top: 50px;
 	color: #5e5e5e;
-font-size: 14px;
-font-weight: 300;
+	font-size: 14px;
+	font-weight: 300;
 	text-align: center;
 }
 
@@ -1297,8 +1349,8 @@ font-weight: 300;
 .single-product-price {
 	margin-top: 37px;
 	color: #ef5b70;
-font-size: 24px;
-font-weight: 700;
+	font-size: 24px;
+	font-weight: 700;
 }
 
 .single-product-character {
@@ -1313,7 +1365,7 @@ font-weight: 700;
 	width: 144px;
 	display: flex;
 	flex-direction: column;
-	
+
 }
 
 .single-product-character-item h3 {
@@ -1326,19 +1378,45 @@ font-weight: 700;
 
 
 .single-product-button {
-	flex:2;
+	flex: 2;
 	text-align: center;
 	margin-top: 28px;
 }
 
 .may-like-head {
 	text-align: center;
-font-size: 24px;
-font-weight: 400;
-text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .may-like {
 	margin-top: 119px;
+
+}
+
+.total {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+.sub {
+	text-transform: uppercase;
+font-size: 11px;
+font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.grand {
+	font-weight: 700;
 	
 }
+
+.sub-price,
+.grand-price {
+	margin-left: 20px;
+}
+
+

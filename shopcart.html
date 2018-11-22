@@ -38,7 +38,7 @@
 	<nav class="container">
 		<ul class="menu">
 			<li class="menu-list"><a href="index.html" class="menu-link">Home</a></li>
-			<li class="menu-list"><a href="product.html" class="menu-link  active">Man</a></li>
+			<li class="menu-list"><a href="product.html" class="menu-link">Man</a></li>
 			<li class="menu-list"><a href="#" class="menu-link">Women</a></li>
 			<li class="menu-list"><a href="#" class="menu-link">Kids</a></li>
 			<li class="menu-list"><a href="#" class="menu-link">Accoseriese</a></li>
@@ -177,21 +177,23 @@
 						<select class="shipping-input">
 							<option>Bangladesh</option>
 						</select>
-						<input class="shipping-input" type="text" placeholder="State">
-						<input class="shipping-input" type="text" placeholder="Postcode / Zip">
+						<input required class="shipping-input" type="text" placeholder="State">
+						<input required class="shipping-input" type="text" placeholder="Postcode / Zip">
 						<button class="quntity purchase-button">get a quote</button>
 					</form>
 				</div>
 				<div class="discount">
 					<h2 class="purchase-head-text">coupon discount</h2>
 					<p class="discount-info">Enter your coupon code if you have one</p>
-					<input class="shipping-input" type="text" placeholder="Discount code">
-					<button class="quntity purchase-button">Apply coupon</button>
+					<form class="discount-form" action="#">
+						<input required class="shipping-input" type="text" placeholder="Discount code">
+						<button class="quntity purchase-button">Apply coupon</button>
+					</form>
 				</div>
 				<div class="checkout">
 					<div class="checkout-info">
-						<p></p>
-						<p></p>
+						<div class="total sub"><p>Sub total</p> <p class="sub-price">$900</p></div>
+						<div class="total grand"><p>Grand total</p> <p class="grand-price pink">$900</p></div>
 					</div>
 					<a href="#" class="proceed-checkout">proceed to checkout</a>
 				</div>
@@ -267,7 +269,7 @@
 						<p class="feedback-head">Subscribe</p>
 						<p class="feedback-head-text">For our newletter and promotion</p>
 						<form class="form">
-							<input class="email-input" type="text">
+							<input required class="email-input" type="text">
 							<button class="email-button button">Subscribe</button>
 							<p class="form-animation-text">Enter Your Email</p>
 						</form>
