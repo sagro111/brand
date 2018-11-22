@@ -49,159 +49,104 @@
 	<div class="page-name">
 		<div class="container flex-box">
 			<div class="page-head">
-				<h2 class="pink">Shop Cart</h2>
+				<h2 class="pink">Checkout</h2>
 			</div>
 			<nav class="breadcrumbs">
 				<ul class="bredcrumbs-menu">
-					<li class="breadcrumbs-list"><a href="index.html" class="breadcrumbs-link">home </a></li>
-					<li><span>/</span></li>
-					<li class="breadcrumbs-list"><a href="#" class="breadcrumbs-link pink">Shop Cart</a></li>
+					<li class="breadcrumbs-list"><a href="index.html" class="breadcrumbs-link">home</a></li>
+					<li class="breadcrumbs-list"><span>/</span></li>
+					<li class="breadcrumbs-list"><a href="shopcart.html" class="breadcrumbs-link">shop cart</a></li>
+					<li class="breadcrumbs-list"><span>/</span></li>
+					<li class="breadcrumbs-list"><a href="#" class="breadcrumbs-link pink">checkout</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
-	<main>
-		<div class="container">
-			<div class="cart-table">
-				<div class="cart-row upper">
-					<div class="cart-cell">Product Details</div>
-					<div class="cart-cell">unite Price</div>
-					<div class="cart-cell">Quantity</div>
-					<div class="cart-cell">shipping</div>
-					<div class="cart-cell">Subtotal</div>
-					<div class="cart-cell">ACTION</div>
+	<main class="container">
 
-				</div>
-				<div class="cart-row">
-					<div class="cart-cell">
-						<img src="images/shopcart/cart-1.jpg" alt="people-tshirt" class="cart-table-img">
-						<div class="cart-table-info">
-							<h3 class="cart-product-name">Mango People T-shirt</h3>
-							<table>
-								<tr>
-									<td class="custom-table">
-										<p class="cart-product-info">Color:</p>
-									</td>
-									<td class="custom-table">
-										<p class="cart-product-other-info">Red</p>
-									</td>
-								</tr>
-								<tr>
-									<td class="custom-table">
-										<p class="cart-product-info">Size:</p>
-									</td>
-									<td class="custom-table">
-										<p class="cart-product-other-info">XL</p>
-									</td>
-								</tr>
-							</table>
-						</div>
+		<section class="checkout">
+			<h2 class="checkout-head"><span class="checkout-number">01.</span>Shipping adress</h2>
+			<div class="checkout-box">
+				<article class="user-login">
+
+					<div>
+						<h3 class="user-login-head">Check as a guest or register</h3>
+						<p class="user-login-text">Register with us for future convenience</p>
 					</div>
-					<div class="cart-cell">$150</div>
-					<div class="cart-cell"><span class="quntity">2</span></div>
-					<div class="cart-cell upper">free</div>
-					<div class="cart-cell">$300</div>
-					<div class="cart-cell"><a class="cansel-product" href="#"><i class="fas fa-times-circle"></i></a></div>
-				</div>
-				<div class="cart-row">
-					<div class="cart-cell">
-						<img src="images/shopcart/cart-2.jpg" alt="people-tshirt" class="cart-table-img">
-						<div class="cart-table-info">
-							<h3 class="cart-product-name">Mango People T-shirt</h3>
-							<table>
-								<tr>
-									<td class="custom-table">
-										<p class="cart-product-info">Color:</p>
-									</td>
-									<td class="custom-table">
-										<p class="cart-product-other-info">Red</p>
-									</td>
-								</tr>
-								<tr>
-									<td class="custom-table">
-										<p class="cart-product-info">Size:</p>
-									</td>
-									<td class="custom-table">
-										<p class="cart-product-other-info">XL</p>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-					<div class="cart-cell">$150</div>
-					<div class="cart-cell"><span class="quntity">2</span></div>
-					<div class="cart-cell upper">free</div>
-					<div class="cart-cell">$300</div>
-					<div class="cart-cell"><a class="cansel-product" href="#"><i class="fas fa-times-circle"></i></a></div>
-				</div>
-				<div class="cart-row">
-					<div class="cart-cell">
-						<img src="images/shopcart/cart-3.jpg" alt="people-tshirt" class="cart-table-img">
-						<div class="cart-table-info">
-							<h3 class="cart-product-name">Mango People T-shirt</h3>
-							<table>
-								<tr>
-									<td class="custom-table">
-										<p class="cart-product-info">Color:</p>
-									</td>
-									<td class="custom-table">
-										<p class="cart-product-other-info">Red</p>
-									</td>
-								</tr>
-								<tr>
-									<td class="custom-table">
-										<p class="cart-product-info">Size:</p>
-									</td>
-									<td class="custom-table">
-										<p class="cart-product-other-info">XL</p>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-					<div class="cart-cell">$150</div>
-					<div class="cart-cell"><span class="quntity">2</span></div>
-					<div class="cart-cell upper">free</div>
-					<div class="cart-cell">$300</div>
-					<div class="cart-cell"><a class="cansel-product" href="#"><i class="fas fa-times-circle"></i></a></div>
-				</div>
-			</div>
-			<div class="clear-cart">
-				<a href="#" class="cart-button upper">cLEAR SHOPPING CART</a>
-				<a href="product.html" class="cart-button upper">cONTINUE sHOPPING</a>
-			</div>
-			<div class="purchase-reg">
-				<div class="shipping">
-					<h2 class="purchase-head-text">shipping adress</h2>
-					<form class="shipping-form" action="#">
-						<select class="shipping-input">
-							<option>Bangladesh</option>
-						</select>
-						<input required class="shipping-input" type="text" placeholder="State">
-						<input required class="shipping-input" type="text" placeholder="Postcode / Zip">
-						<button class="quntity purchase-button">get a quote</button>
+
+					<form action="#">
+						<label class="radio" for="guest">
+							<input name="radio" id="guest" type="radio">
+							<span class="checkout-span"></span>checkout as guest
+						</label>
+
+						<br>
+
+						<label class="radio" for="register">
+							<input name="radio" id="register" type="radio">
+							<span class="checkout-span"></span> register
+						</label>
 					</form>
-				</div>
-				<div class="discount">
-					<h2 class="purchase-head-text">coupon discount</h2>
-					<p class="discount-info">Enter your coupon code if you have one</p>
-					<form class="discount-form" action="#">
-						<input required class="shipping-input" type="text" placeholder="Discount code">
-						<button class="quntity purchase-button">Apply coupon</button>
-					</form>
-				</div>
-				<div class="checkout-box-info ">
-					<div class="checkout-info">
-						<div class="total sub"><p>Sub total</p> <p class="sub-price">$900</p></div>
-						<div class="total grand"><p>Grand total</p> <p class="grand-price pink">$900</p></div>
+
+					<div>
+						<h3 class="user-login-head">register and save time!</h3>
+						<p class="user-login-text">Register with us for future convenience</p>
 					</div>
-					<a href="checkout.html" class="proceed-checkout">proceed to checkout</a>
-				</div>
+
+					<div>
+						<p class="user-login-text "><i class="fas fa-angle-double-right"></i> Fast and easy checkout</p>
+						<p class="user-login-text"><i class="fas fa-angle-double-right"></i> Easy access to your order history and status</p>
+
+					</div>
+					<a href="#" class="cart-button checkout-button upper">Continue</a>
+
+				</article>
+
+				<article class="user-login">
+					<div>
+						<h3 class="user-login-head">Already registed?</h3>
+						<p class="user-login-text">Please log in below</p>
+					</div>
+					<form class="sign-in" action="#">
+					
+						<label class="input-text" for="email">email adress <span class="sup">*</span></label>
+						<input required class="shipping-input" type="text" id="email">
+						
+						<label class="input-text" for="password">password <span class="sup">*</span></label>
+						<input required class="shipping-input" type="password" id="password">
+						
+						<p class="req">* Required Fileds</p>
+						
+						<button class="cart-button checkout-button upper">Log in</button>
+					</form>
+					
+				</article>
+
 			</div>
-		</div>
+		</section>
+
+		<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">02.</span>Billing information</h2>
+		</section>
+
+		<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">03.</span>Shipping information</h2>
+		</section>
+
+		<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">04.</span>Shipping method</h2>
+		</section>
+		
+				<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">05.</span>Payment method</h2>
+		</section>
+		
+				<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">06.</span>Order review</h2>
+		</section>
+
 
 	</main>
-
 	<footer class="footer">
 		<div class="feedback">
 			<div class="container flex-box">
