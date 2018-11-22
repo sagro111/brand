@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Мужские вещи</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container flex-box">
+			<div class="header-left">
+				<a href="index.html" class="logo"><img src="images/logo.png" alt="logo" class="logo-img">Bran<span class="logo-text">d</span></a>
+				<form class="form" action="#">
+					<div class="browse">Browse <i class="fas fa-caret-down"></i></div>
+					<input class="form-text" type="text" placeholder="Search for item...">
+					<button class="submit" type="submit"><img src="images/search.png" alt=""></button>
+				</form>
+			</div>
+			<div class="header-right">
+				<a href="shopcart.html" class="cart"><img src="images/cart.svg" alt="" class="cart-img"></a>
+				<div class="my-acc">
+					<a href="" class="drop button"> My account <i class="fas fa-caret-down"></i></a>
+
+					<div class="user-menu">
+						<a class="user-menu-link" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+						<a class="user-menu-link" href="#"><i class="user-icon fas fa-user-plus"></i> Sign Up</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<nav class="container">
+		<ul class="menu">
+			<li class="menu-list"><a href="index.html" class="menu-link">Home</a></li>
+			<li class="menu-list"><a href="product.html" class="menu-link">Man</a></li>
+			<li class="menu-list"><a href="#" class="menu-link">Women</a></li>
+			<li class="menu-list"><a href="#" class="menu-link">Kids</a></li>
+			<li class="menu-list"><a href="#" class="menu-link">Accoseriese</a></li>
+			<li class="menu-list"><a href="#" class="menu-link">Featured</a></li>
+			<li class="menu-list"><a href="singleproduct.html" class="menu-link">Page</a></li>
+		</ul>
+	</nav>
+	<div class="page-name">
+		<div class="container flex-box">
+			<div class="page-head">
+				<h2 class="pink">Checkout</h2>
+			</div>
+			<nav class="breadcrumbs">
+				<ul class="bredcrumbs-menu">
+					<li class="breadcrumbs-list"><a href="index.html" class="breadcrumbs-link">home</a></li>
+					<li class="breadcrumbs-list"><span>/</span></li>
+					<li class="breadcrumbs-list"><a href="shopcart.html" class="breadcrumbs-link">shop cart</a></li>
+					<li class="breadcrumbs-list"><span>/</span></li>
+					<li class="breadcrumbs-list"><a href="#" class="breadcrumbs-link pink">checkout</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<main class="container">
+
+		<section class="checkout">
+			<h2 class="checkout-head"><span class="checkout-number">01.</span>Shipping adress</h2>
+			<div class="checkout-box">
+				<article class="user-login">
+
+					<div>
+						<h3 class="user-login-head">Check as a guest or register</h3>
+						<p class="user-login-text">Register with us for future convenience</p>
+					</div>
+
+					<form action="#">
+						<label class="radio" for="guest">
+							<input name="radio" id="guest" type="radio">
+							<span class="checkout-span"></span>checkout as guest
+						</label>
+
+						<br>
+
+						<label class="radio" for="register">
+							<input name="radio" id="register" type="radio">
+							<span class="checkout-span"></span> register
+						</label>
+					</form>
+
+					<div>
+						<h3 class="user-login-head">register and save time!</h3>
+						<p class="user-login-text">Register with us for future convenience</p>
+					</div>
+
+					<div>
+						<p class="user-login-text "><i class="fas fa-angle-double-right"></i> Fast and easy checkout</p>
+						<p class="user-login-text"><i class="fas fa-angle-double-right"></i> Easy access to your order history and status</p>
+
+					</div>
+					<a href="#" class="cart-button checkout-button upper">Continue</a>
+
+				</article>
+
+				<article class="user-login">
+					<div>
+						<h3 class="user-login-head">Already registed?</h3>
+						<p class="user-login-text">Please log in below</p>
+					</div>
+					<form class="sign-in" action="#">
+					
+						<label class="input-text" for="email">email adress <span class="sup">*</span></label>
+						<input required class="shipping-input" type="text" id="email">
+						
+						<label class="input-text" for="password">password <span class="sup">*</span></label>
+						<input required class="shipping-input" type="password" id="password">
+						
+						<p class="req">* Required Fileds</p>
+						
+						<button class="cart-button checkout-button upper">Log in</button>
+					</form>
+					
+				</article>
+
+			</div>
+		</section>
+
+		<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">02.</span>Billing information</h2>
+		</section>
+
+		<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">03.</span>Shipping information</h2>
+		</section>
+
+		<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">04.</span>Shipping method</h2>
+		</section>
+		
+				<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">05.</span>Payment method</h2>
+		</section>
+		
+				<section class="checkout">
+			<h2 class="checkout-head upper"><span class="checkout-number">06.</span>Order review</h2>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="feedback">
+			<div class="container flex-box">
+				<div class="feedback-block">
+					<input type="radio" id="customer-btn-1" name="customer-toggle" checked>
+					<input type="radio" id="customer-btn-2" name="customer-toggle">
+					<input type="radio" id="customer-btn-3" name="customer-toggle">
+
+					<div class="commit" id="commit1">
+						<img src="images/customer-img.png" alt="Аватар автора" class="customer-img">
+						<div class="customer-message">
+							<!--Нужены ли здесь теги для цитат?>-->
+							<p class="customer-quote">
+								“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+								a pulvinar purus condimentum a. Aliquam condimentum
+								mattis neque sed pretium”</p>
+
+							<p class="customer-name pink">Bin Burhan1</p>
+							<p class="customer-city">Dhaka, Bd</p>
+						</div>
+					</div>
+
+					<div class="commit" id="commit2">
+						<img src="images/customer-img2.png" alt="Аватар автора" class="customer-img">
+						<div class="customer-message">
+							<!--Нужены ли здесь теги для цитат?>-->
+							<p class="customer-quote">
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea
+								commodo consequat.”</p>
+
+							<p class="customer-name pink">Merlin Mёs</p>
+							<p class="customer-city">Paris, France</p>
+						</div>
+					</div>
+
+					<div class="commit" id="commit3">
+						<img src="images/customer-img3.png" alt="Аватар автора" class="customer-img">
+						<div class="customer-message">
+							<!--Нужены ли здесь теги для цитат?>-->
+							<p class="customer-quote">
+								“Sed ut perspiciatis, unde omnis iste natus error sit
+								voluptatem accusantium doloremque laudantium,
+								totam rem aperiam eaque ipsa, quae ab illo inventore
+								veritatis et quasi architecto beatae vitae dicta sunt,
+								explicabo. ”</p>
+
+							<p class="customer-name pink">Vika Hulp</p>
+							<p class="customer-city">Simferopol, Russia</p>
+						</div>
+					</div>
+
+
+					<div class="label-box">
+						<label class="device-btn" for="customer-btn-1"></label>
+						<label class="device-btn" for="customer-btn-2"></label>
+						<label class="device-btn" for="customer-btn-3"></label>
+					</div>
+
+				</div>
+				<div class="feedback-block">
+					<div class="feedback-form">
+						<p class="feedback-head">Subscribe</p>
+						<p class="feedback-head-text">For our newletter and promotion</p>
+						<form class="form">
+							<input required class="email-input" type="text">
+							<button class="email-button button">Subscribe</button>
+							<p class="form-animation-text">Enter Your Email</p>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="middle-footer container">
+			<div class="footer-item">
+				<a href="#" class="logo"><img src="images/logo.png" alt="logo" class="logo-img">Bran<span class="logo-text">d</span></a>
+				<p class="footer-logo-text">Objectively transition extensive data rather than cross functional
+					solutions. Monotonectally syndicate multidisciplinary materials
+					before go forward benefits. Intrinsicly syndicate an expanded array
+					of processes and cross-unit partnerships. </p>
+
+				<p class="footer-logo-text">Efficiently plagiarize 24/365 action items and focused infomediaries.
+					Distinctively seize superior initiatives for wireless technologies.
+					Dynamically optimize.</p>
+			</div>
+
+			<div class="footer-item">
+				<p class="footer-menu-head pink">Company</p>
+				<ul class="footer-menu">
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Home</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Shop</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">About</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">How It Works</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<p class="footer-menu-head pink">Information</p>
+				<ul class="footer-menu">
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Tearms & Condition</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Privacy Policy</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">How to Buy</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">How to Sell</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Promotion</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<p class="footer-menu-head pink">Shop category</p>
+				<ul class="footer-menu">
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Men</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Women</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Child</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Apparel</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Brows All</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="low-footer">
+			<div class="container flex-box">
+				<div class="copy">
+					<p class="copyright">&copy; 2017 Brand All Rights Reserved.</p>
+				</div>
+				<div class="social">
+					<a href="" class="social-ico fb"><i class="fab fa-facebook-f"></i></a>
+					<a href="" class="social-ico tw"><i class="fab fa-twitter"></i></a>
+					<a href="" class="social-ico in"><i class="fab fa-linkedin-in"></i></a>
+					<a href="" class="social-ico pi"><i class="fab fa-pinterest-p"></i></a>
+					<a href="" class="social-ico g+"><i class="fab fa-google-plus-g"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
