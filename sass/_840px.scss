@@ -1,0 +1,136 @@
+@media screen and (max-width:840px) {
+
+  .header-right {
+    width: 160px;
+  }
+
+  .resp-hide,
+  .drop.button {
+    display: none;
+  }
+
+  .responsive-ico {
+    display: block;
+  }
+
+  .drop-box {
+    max-width: 550px;
+  }
+
+  .menu-list:nth-child(3) .drop-box {
+    left:-145px;
+
+  }
+
+  .menu-list:nth-child(3) .drop-box::before {
+    left: 178px;
+  }
+
+  .bg-video {
+    display: none;
+  }
+
+  .offers {
+    display: flex;
+    flex-direction: column;
+    .offers-bar {
+      width: 100%;
+      .offers-item {
+        max-height: 400px;
+        margin-bottom: 2.5%;
+        overflow: hidden;
+      }
+    }
+  }
+
+
+
+  .features-item {
+    width: 31.46%;
+  }
+
+  .features-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .features-item:nth-child(4n) {
+    margin-right: 2.8%;
+  }
+
+  .hidden-block {
+    width: 30vw;
+  }
+
+  .features-hidden {
+    display: block;
+  }
+
+  .advantages {
+    flex-direction: column;
+    height: 100vw;
+    .advantage-left {
+      background-size: 100%;
+      min-height: 350px;
+    }
+    .advantage-left,
+    .advantage-right {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .advantage-right {
+      min-height: 478px;
+      padding: 7.5%;
+      align-items: center;
+      .advantage-item {
+        margin-bottom: 30px;
+        flex-direction: column;
+        display: flex;
+      }
+
+      .advantage-right-text {
+        margin-top: 5px;
+        margin-left: 0;
+        width: 225px;
+        text-align: center;
+      }
+
+    }
+  }
+
+  .column {
+    flex-direction: column;
+    .feedback-block {
+      width: 70%;
+      padding-right: 0;
+      border: none;
+    }
+
+  }
+
+  .feedback {
+
+    .email-input {
+      width: 253px;
+    }
+  }
+
+  .middle-footer {
+    display: flex;
+    flex-direction: column;
+
+    .footer-item {
+      margin-top: 50px;
+      width: 100%;
+      text-align: center;
+      .footer-menu {
+        display: flex;
+        justify-content: space-around;
+
+      }
+      .footer-menu-list {
+        margin-top: 0;
+      }
+    }
+  }
+}

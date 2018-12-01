@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -29,7 +29,9 @@
 							<div class="drop-box-cart">
 								<img src="images/small-1.png" alt="" class="drop-cart-img">
 								<article class="drop-cart-text">
-									<h3 class="upper drop-cart-head">Rebox zane</h3>
+									<a class="active" href="singleproduct.html">
+										<h3 class="upper drop-cart-head">Rebox zane</h3>
+									</a>
 									<div class="stars-box">
 										<span class="stars"><i class="fas fa-star"></i></span>
 										<span class="stars"><i class="fas fa-star"></i></span>
@@ -44,7 +46,9 @@
 							<div class="drop-box-cart">
 								<img src="images/small-2.png" alt="" class="drop-cart-img">
 								<article class="drop-cart-text">
-									<h3 class="upper drop-cart-head">Rebox zane</h3>
+									<a class="active" href="singleproduct.html">
+										<h3 class="upper drop-cart-head">Rebox zane</h3>
+									</a>
 									<div class="stars-box">
 										<span class="stars"><i class="fas fa-star"></i></span>
 										<span class="stars"><i class="fas fa-star"></i></span>
@@ -61,7 +65,7 @@
 								<p class="upper">$500.00</p>
 							</div>
 							<a href="checkout.html" class="view-all upper drop-button">checkout</a>
-							<a href="shopcart.html" class="cart-button upper drop-button grey">checkout</a>
+							<a href="shopcart.html" class="cart-button upper drop-button grey">Go to cart</a>
 						</div>
 					</li>
 					<li class="header-user-list">
@@ -76,7 +80,7 @@
 	</header>
 	<nav class="container">
 		<ul class="menu">
-			<li class="menu-list"><a href="#" class="menu-link active">Home</a></li>
+			<li class="menu-list"><a href="index.html" class="menu-link active">Home</a></li>
 			<li class="menu-list"><a href="product.html" class="menu-link">Man</a>
 				<div class="drop-box">
 					<div class="drop-box-flex">
@@ -187,7 +191,7 @@
 					<div class="cart-cell">
 						<img src="images/shopcart/cart-1.jpg" alt="people-tshirt" class="cart-table-img">
 						<div class="cart-table-info">
-							<h3 class="cart-product-name">Mango People T-shirt</h3>
+							<a href="singleproduct.html"><h3 class="cart-product-name">Mango People T-shirt</h3></a>
 							<table>
 								<tr>
 									<td class="custom-table">
@@ -209,7 +213,7 @@
 						</div>
 					</div>
 					<div class="cart-cell">$150</div>
-					<div class="cart-cell"><span class="quntity">2</span></div>
+					<div class="cart-cell"><input type="number" class="quntity" value="2"></div>
 					<div class="cart-cell upper">free</div>
 					<div class="cart-cell">$300</div>
 					<div class="cart-cell"><a class="cansel-product" href="#"><i class="fas fa-times-circle"></i></a></div>
@@ -218,7 +222,7 @@
 					<div class="cart-cell">
 						<img src="images/shopcart/cart-2.jpg" alt="people-tshirt" class="cart-table-img">
 						<div class="cart-table-info">
-							<h3 class="cart-product-name">Mango People T-shirt</h3>
+							<a href="singleproduct.html"><h3 class="cart-product-name">Mango People T-shirt</h3></a>
 							<table>
 								<tr>
 									<td class="custom-table">
@@ -240,7 +244,7 @@
 						</div>
 					</div>
 					<div class="cart-cell">$150</div>
-					<div class="cart-cell"><span class="quntity">2</span></div>
+					<div class="cart-cell"><input type="number" class="quntity" value="2"></div>
 					<div class="cart-cell upper">free</div>
 					<div class="cart-cell">$300</div>
 					<div class="cart-cell"><a class="cansel-product" href="#"><i class="fas fa-times-circle"></i></a></div>
@@ -249,7 +253,7 @@
 					<div class="cart-cell">
 						<img src="images/shopcart/cart-3.jpg" alt="people-tshirt" class="cart-table-img">
 						<div class="cart-table-info">
-							<h3 class="cart-product-name">Mango People T-shirt</h3>
+							<a href="singleproduct.html"><h3 class="cart-product-name">Mango People T-shirt</h3></a>
 							<table>
 								<tr>
 									<td class="custom-table">
@@ -271,7 +275,7 @@
 						</div>
 					</div>
 					<div class="cart-cell">$150</div>
-					<div class="cart-cell"><span class="quntity">2</span></div>
+					<div class="cart-cell"><input type="number" class="quntity" value="2"></div>
 					<div class="cart-cell upper">free</div>
 					<div class="cart-cell">$300</div>
 					<div class="cart-cell"><a class="cansel-product" href="#"><i class="fas fa-times-circle"></i></a></div>
@@ -290,7 +294,7 @@
 						</select>
 						<input required class="shipping-input" type="text" placeholder="State">
 						<input required class="shipping-input" type="text" placeholder="Postcode / Zip">
-						<button class="quntity purchase-button">get a quote</button>
+						<button class="shopcart-button purchase-button">get a quote</button>
 					</form>
 				</div>
 				<div class="discount">
@@ -298,13 +302,19 @@
 					<p class="discount-info">Enter your coupon code if you have one</p>
 					<form class="discount-form" action="#">
 						<input required class="shipping-input" type="text" placeholder="Discount code">
-						<button class="quntity purchase-button">Apply coupon</button>
+						<button class="shopcart-button purchase-button">Apply coupon</button>
 					</form>
 				</div>
 				<div class="checkout-box-info ">
 					<div class="checkout-info">
-						<div class="total sub"><p>Sub total</p> <p class="sub-price">$900</p></div>
-						<div class="total grand"><p>Grand total</p> <p class="grand-price pink">$900</p></div>
+						<div class="total sub">
+							<p>Sub total</p>
+							<p class="sub-price">$900</p>
+						</div>
+						<div class="total grand">
+							<p>Grand total</p>
+							<p class="grand-price pink">$900</p>
+						</div>
 					</div>
 					<a href="checkout.html" class="proceed-checkout">proceed to checkout</a>
 				</div>
@@ -405,7 +415,7 @@
 			<div class="footer-item">
 				<p class="footer-menu-head pink">Company</p>
 				<ul class="footer-menu">
-					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Home</a></li>
+					<li class="footer-menu-list"><a class="footer-menu-link" href="index.html">Home</a></li>
 					<li class="footer-menu-list"><a class="footer-menu-link" href="#">Shop</a></li>
 					<li class="footer-menu-list"><a class="footer-menu-link" href="#">About</a></li>
 					<li class="footer-menu-list"><a class="footer-menu-link" href="#">How It Works</a></li>

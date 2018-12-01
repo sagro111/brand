@@ -55,7 +55,7 @@ ul {
 }
 
 .container {
-	width: 1140px;
+	max-width: 1140px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -66,7 +66,7 @@ ul {
 	background-color: #ffffff;
 	height: 100px;
 	display: flex;
-	
+
 }
 
 .header-left {
@@ -111,7 +111,7 @@ ul {
 	font-size: 14px;
 	font-weight: 300;
 	padding: 10px 35px 10px 15px;
-	;
+;
 	min-height: 17px;
 	height: 19px;
 	cursor: pointer;
@@ -148,6 +148,7 @@ ul {
 
 .cart:hover {
 	opacity: 1;
+	padding-bottom: 40px;
 }
 
 .cart:hover .drop-menu {
@@ -206,7 +207,7 @@ ul {
 
 .button:active {
 	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
-		1px 1px 5px rgba(255, 255, 255, 1);
+	1px 1px 5px rgba(255, 255, 255, 1);
 
 }
 
@@ -531,6 +532,7 @@ ul {
 }
 
 .flex-box {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
@@ -1091,7 +1093,7 @@ input[type="checkbox"]:checked ~ .size-checkbox::before {
 	font-size: 16px;
 	font-weight: bold;
 	display: block;
-	
+
 	border: 1px solid #ef5b70;
 	padding: 11px 47px 11px 47px;
 	transition: 250ms;
@@ -1189,7 +1191,7 @@ input[type="checkbox"]:checked ~ .size-checkbox::before {
 
 .custom-table {
 	padding: 0;
-	;
+;
 }
 
 .cansel-product {
@@ -1201,12 +1203,17 @@ input[type="checkbox"]:checked ~ .size-checkbox::before {
 	color: black;
 }
 
+.shopcart-button,
 .quntity {
-	padding: 9px 25px;
+	padding: 9px 5px 9px 15px;
 	border: 1px solid #eaeaea;
 	font-size: 13px;
 	font-weight: 400;
 	background-color: transparent;
+}
+
+.quntity {
+	width: 30px;
 }
 
 .clear-cart {
@@ -1665,7 +1672,7 @@ input[type="radio"]:checked ~ .checkout-span::before {
 
 .drop-box-cart {
 	width: 260px;
-	
+
 	position: relative;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ededed;
