@@ -1,0 +1,119 @@
+@media screen and (max-width: 600px) {
+  .features-content {
+    .features-item {
+      width: 48%;
+      margin-right: 2%;
+    }
+    .features-item:nth-child(2n) {
+      margin-right: 0;
+    }
+    .resp-hide {
+      display: block;
+    }
+    .features-hidden {
+      display: none;
+    }
+  }
+
+  .purchase-reg {
+    flex-direction: column;
+    justify-content: flex-start;
+    .discount,
+    .shipping {
+      margin-bottom: 20px;
+    }
+    .checkout-box-info {
+      width: inherit;
+    }
+  }
+
+  .active {
+    border: none;
+    color:$pink;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+    padding: 30px 0;
+    width: 200px;
+    position: absolute;
+    z-index: 3;
+    background-color: #eee;
+    top: -15px;
+    left:-200px;
+  }
+
+  .burger-checkbox + label {
+    transition: 250ms;
+  }
+
+  .burger-checkbox:checked ~ label {
+    transform: translateX(135px);
+    z-index: 5;
+  }
+
+  .burger-checkbox:checked ~ label .second {
+    display: none;
+  }
+
+  .burger-checkbox:checked ~ label .first {
+    top:10px;
+    transform: rotate(45deg);
+  }
+
+  .burger-checkbox:checked ~ label .third {
+    top:10px;
+    transform: rotate(-45deg);
+  }
+
+  .burger-checkbox:checked ~ .menu {
+    left: 0;
+  }
+
+  .column .feedback-block {
+    width: 95%;
+  }
+
+  #customer-btn-1:checked ~ #commit1,
+  #customer-btn-2:checked ~ #commit2,
+  #customer-btn-3:checked ~ #commit3 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .customer-message {
+    margin: 0;
+  }
+
+  .label-box {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .product-item {
+    max-width: 48%;
+    margin-right: 2%;
+  }
+
+  .product-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .product-item.resp-hide {
+    display: none;
+  }
+
+  .checkout-box {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  
+
+}

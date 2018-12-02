@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Мужские вещи</title>
+	<title>Модные вещи</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
@@ -12,17 +13,23 @@
 
 <body>
 	<header class="header">
-		<div class="container flex-box">
+		<div class="container flex-box responsive">
 			<div class="header-left">
 				<a href="index.html" class="logo"><img src="images/logo.png" alt="logo" class="logo-img">Bran<span class="logo-text">d</span></a>
-				<form class="form" action="#">
+				<form class="form resp-hide" action="#">
 					<div class="browse">Browse <i class="fas fa-caret-down"></i></div>
 					<input class="form-text" type="text" placeholder="Search for item...">
 					<button class="submit" type="submit"><img src="images/search.png" alt=""></button>
 				</form>
+
+
+
 			</div>
 			<div class="header-right">
 				<ul class="header-user">
+					<li class="header-user-list">
+						<a href="signup.html" class="responsive-ico"><i class="fas fa-search"></i></a>
+					</li>
 					<li class="header-user-list">
 						<a href="shopcart.html" class="cart"><img src="images/cart.svg" alt="" class="cart-img"></a>
 						<div class="drop-box drop-cart">
@@ -69,7 +76,9 @@
 						</div>
 					</li>
 					<li class="header-user-list">
-						<a href="" class="drop button"> My account <i class="fas fa-caret-down"></i></a>
+						<a href="signup.html" class="drop button"> My account <i class="fas fa-caret-down"></i></a>
+						<a href="signup.html" class="responsive-ico"> <i class="far fa-user"></i></a>
+
 					</li>
 				</ul>
 
@@ -79,6 +88,13 @@
 		</div>
 	</header>
 	<nav class="container">
+
+		<input id="burger-button" class="burger-checkbox" type="checkbox">
+		<label for="burger-button" class="burger">
+			<span class="burger-line first"></span>
+			<span class="burger-line second"></span>
+			<span class="burger-line third"></span>
+		</label>
 		<ul class="menu">
 			<li class="menu-list"><a href="index.html" class="menu-link active">Home</a></li>
 			<li class="menu-list"><a href="product.html" class="menu-link">Man</a>
@@ -158,12 +174,39 @@
 			<li class="menu-list"><a href="#" class="menu-link">Kids</a></li>
 			<li class="menu-list"><a href="#" class="menu-link">Accoseriese</a></li>
 			<li class="menu-list"><a href="#" class="menu-link">Featured</a></li>
-			<li class="menu-list"><a href="singleproduct.html" class="menu-link">Page</a></li>
+			<li class="menu-list"><a href="#" class="menu-link">Page</a>
+				<div class="drop-box">
+					<div class="drop-box-flex">
+						<h3 class="drop-heading">Man 1</h3>
+						<ul class="drop-menu">
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Dresses</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Tops</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Sweaters/Knits</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Jackets/Coats</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Blazers</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Denim</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Leggings/Pants</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Skirts/Shorts</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Accessories </a></li>
+						</ul>
+					</div>
+					<div class="drop-box-flex">
+						<h3 class="drop-heading">Man 4</h3>
+						<ul class="drop-menu">
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Dresses</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Tops</a></li>
+							<li class="drop-menu-list"><a href="#" class="drop-menu-link">Sweaters/Knits</a></li>
+
+						</ul>
+						<img width="140" src="images/product/product-1.jpg" alt="women">
+					</div>
+				</div>
+			</li>
 		</ul>
 	</nav>
 	<div class="page-name">
-		<div class="container flex-box">
-			<div class="page-head">
+		<div class="container flex-box responsive responsive-br">
+			<div class="page-head ">
 				<h2 class="pink">Moschino Cheap And Chic</h2>
 			</div>
 			<nav class="breadcrumbs">
@@ -182,8 +225,8 @@
 			<img src="images/women.png" alt="" class="single-product-img">
 		</div>
 
-		<div class="container">
-			<div class="single-product-box">
+		<div class="container responsive">
+			<div class="single-product-box ">
 				<article class="single-product-info">
 					<p class="what-category pink upper">WOMEN COLLECTION</p>
 					<h3 class="upper">Moschino Cheap And Chic</h3>
@@ -268,7 +311,7 @@
 						</div>
 					</div>
 
-					<div class="features-item">
+					<div class="features-item resp-hide">
 						<a href="singleproduct.html">
 							<img class="features-img" src="images/women/women-4.jpg" alt="">
 							<div class="features-item-info">
@@ -289,7 +332,7 @@
 	</main>
 	<footer class="footer">
 		<div class="feedback">
-			<div class="container flex-box">
+			<div class="container column flex-box">
 				<div class="feedback-block">
 					<input type="radio" id="customer-btn-1" name="customer-toggle" checked>
 					<input type="radio" id="customer-btn-2" name="customer-toggle">
@@ -298,7 +341,7 @@
 					<div class="commit" id="commit1">
 						<img src="images/customer-img.png" alt="Аватар автора" class="customer-img">
 						<div class="customer-message">
-							<!--Нужены ли здесь теги для цитат?>-->
+
 							<p class="customer-quote">
 								“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
 								a pulvinar purus condimentum a. Aliquam condimentum
@@ -312,7 +355,7 @@
 					<div class="commit" id="commit2">
 						<img src="images/customer-img2.png" alt="Аватар автора" class="customer-img">
 						<div class="customer-message">
-							<!--Нужены ли здесь теги для цитат?>-->
+
 							<p class="customer-quote">
 								“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 								sed do eiusmod tempor incididunt ut labore et dolore
@@ -328,7 +371,7 @@
 					<div class="commit" id="commit3">
 						<img src="images/customer-img3.png" alt="Аватар автора" class="customer-img">
 						<div class="customer-message">
-							<!--Нужены ли здесь теги для цитат?>-->
+
 							<p class="customer-quote">
 								“Sed ut perspiciatis, unde omnis iste natus error sit
 								voluptatem accusantium doloremque laudantium,
@@ -353,7 +396,7 @@
 					<div class="feedback-form">
 						<p class="feedback-head">Subscribe</p>
 						<p class="feedback-head-text">For our newletter and promotion</p>
-						<form class="form">
+						<form class="form" method="post">
 							<input required class="email-input" type="text">
 							<button class="email-button button">Subscribe</button>
 							<p class="form-animation-text">Enter Your Email</p>
@@ -407,8 +450,8 @@
 				</ul>
 			</div>
 		</div>
-		<div class="low-footer">
-			<div class="container flex-box">
+		<div class="low-footer ">
+			<div class="container responsive flex-box">
 				<div class="copy">
 					<p class="copyright">&copy; 2017 Brand All Rights Reserved.</p>
 				</div>
