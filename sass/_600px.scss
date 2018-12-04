@@ -45,6 +45,31 @@
     background-color: #eee;
     top: -15px;
     left:-200px;
+    .menu-list {
+      .drop-box {
+        flex-direction: column;
+        top: -90px;
+        left: 180px;
+        height: 300px;
+        width: 220px;
+        overflow-y: scroll;
+        padding: 10px;
+      }
+      .drop-img {
+        display: none;
+      }
+      .drop-box:nth-child(1) {
+        top:-150px;
+      }
+      .drop-box:last-child {
+        top: -0px;
+      }
+
+      .drop-box-flex {
+        margin-right: 0;
+        width: auto;
+      }
+    }
   }
 
   .burger-checkbox + label {
@@ -73,6 +98,14 @@
   .burger-checkbox:checked ~ .menu {
     left: 0;
   }
+
+
+
+
+
+
+
+
 
   .column .feedback-block {
     width: 95%;
@@ -114,6 +147,6 @@
     flex-direction: column;
     padding-right: 0;
   }
-  
+
 
 }
