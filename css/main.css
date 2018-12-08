@@ -1709,7 +1709,7 @@ input[type="radio"]:checked ~ .checkout-span::before {
     transform: translateX(135px);
     z-index: 5; }
   .burger-checkbox:checked ~ label .second {
-    display: none; }
+    display: none; } 
   .burger-checkbox:checked ~ label .first {
     top: 10px;
     transform: rotate(45deg); }
